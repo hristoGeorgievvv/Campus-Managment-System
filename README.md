@@ -8,15 +8,7 @@ Add your own name (do not add the names for others!) to the section below.
 	WIP: Campus management software with ability to rent rooms for certain timeslots, as well as renting bikes 
 ## Group members
 
-| 📸 | Name | Email |
-|---|---|---|
-| ![](https://eu.ui-avatars.com/api/?name=OOPP&length=4&size=50&color=DDD&background=777&font-size=0.325) | Przemysław Kowalewski | P.Kowalewski@student.tudelft.nl |
-| ![](https://secure.gravatar.com/avatar/a8e793a5bef2565cb3b3520f03140c2f?s=800&d=identicon&size=50) | Luc Jonker | L.jonker@student.tudelft.nl |
-| ![](https://eu.ui-avatars.com/api/?name=OOPP&length=4&size=50&color=DDD&background=777&font-size=0.325) | Milo Masiello | M.Masiello@student.tudelft.nl |
-| ![](https://eu.ui-avatars.com/api/?name=OOPP&length=4&size=50&color=DDD&background=777&font-size=0.325) | Floris van Veen | B.W.M.F.vanVeen@student.tudelft.nl |
-| ![](https://eu.ui-avatars.com/api/?name=OOPP&length=4&size=50&color=DDD&background=777&font-size=0.325) | Horia Lixandru | H.Lixandru@student.tudelft.nl |
-| ![](https://eu.ui-avatars.com/api/?name=OOPP&length=4&size=50&color=DDD&background=777&font-size=0.325) | Hristo Georgiev | H.georgiev@student.tudelft.nl |
-| ![](https://eu.ui-avatars.com/api/?name=OOPP&length=4&size=50&color=DDD&background=777&font-size=0.325) | Areti Katsikis | A.Katsikis@student.tudelft.nl |
+![](docs/images/Untitled1.png) 
 
 <!-- Instructions (remove once assignment has been completed -->
 <!-- - Add (only!) your own name to the table above (use Markdown formatting) -->
