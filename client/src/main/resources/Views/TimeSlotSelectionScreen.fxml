@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id="mainPane" maxHeight="768.0" maxWidth="1366.0" minHeight="768.0" minWidth="1366.0" prefHeight="768.0" prefWidth="1366.0" style="-fx-background-color: #528DBB;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nl.tudelft.oopp.demo.views.TimeSlotSelectionScreen">
+   <children>
+      <VBox fx:id="vboxNode" alignment="CENTER" layoutY="70.0" prefWidth="${vboxNode.parent.width}">
+         <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="610.0" prefWidth="1250.0" style="-fx-background-color: #DEDEDE;">
+            <effect>
+               <DropShadow color="#00000080" height="151.47" radius="74.4925" spread="0.3" width="148.5" />
+            </effect>
+            <children>
+               <Text fx:id="firstTitle" fill="#3e3e3e" layoutX="272.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" text="#firstTitle">
+                  <font>
+                     <Font name="AvenirNextLTPro-Bold" size="40.0" />
+                  </font>
+               </Text>
+               <Text fx:id="secondTitle" fill="#747474" layoutX="272.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="#secondTitle">
+                  <font>
+                     <Font size="30.0" />
+                  </font>
+               </Text>
+               <ImageView fx:id="imgView" fitHeight="147.0" fitWidth="230.0" layoutX="25.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@../Images/buildingimgs/CEG.png" />
+                  </image>
+               </ImageView>
+               <Pane fx:id="selectButton" layoutX="525.0" layoutY="528.0" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #1D814F; -fx-background-radius: 13;">
+                  <children>
+                     <Text fill="WHITE" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SELECT" textAlignment="CENTER" wrappingWidth="200.0">
+                        <font>
+                           <Font name="AvenirNextLTPro-Bold" size="27.0" />
+                        </font>
+                     </Text>
+                  </children>
+               </Pane>
+               <Pane fx:id="timeslotsContainer" layoutX="25.0" layoutY="394.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="120.0" prefWidth="1200.0">
+                  <children>
+                     <Pane fx:id="ts1011" prefHeight="120.0" prefWidth="120.0" style="-fx-background-color: #707070;">
+                        <children>
+                           <Text fill="#3e3e3e" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10:00" textAlignment="CENTER" wrappingWidth="120.0">
+                              <font>
+                                 <Font name="System Bold" size="35.0" />
+                              </font>
+                           </Text>
+                           <Text fill="#3e3e3e" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="11:00" textAlignment="CENTER" wrappingWidth="120.0">
+                              <font>
+                                 <Font name="System Bold" size="35.0" />
+                              </font>
+                           </Text>
+                        </children>
+                     </Pane>
+                     <Pane fx:id="ts1112" layoutX="120.0" prefHeight="120.0" prefWidth="120.0" style="-fx-background-color: #707070;">
+                        <children>
+                           <Text fill="#3e3e3e" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="11:00" textAlignment="CENTER" wrappingWidth="120.0">
+                              <font>
+                                 <Font name="System Bold" size="35.0" />
+                              </font>
+                           </Text>
+                           <Text fill="#3e3e3e" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="12:00" textAlignment="CENTER" wrappingWidth="120.0">
+                              <font>
+                                 <Font name="System Bold" size="35.0" />
+                              </font>
+                           </Text>
+                        </children>
+                     </Pane>
+                     <Pane fx:id="ts1213" layoutX="240.0" prefHeight="120.0" prefWidth="120.0" style="-fx-background-color: #707070;">
+                        <children>
+                           <Text fill="#3e3e3e" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="12:00" textAlignment="CENTER" wrappingWidth="120.0">
+                              <font>
+                                 <Font name="System Bold" size="35.0" />
+                              </font>
+                           </Text>
+                           <Text fill="#3e3e3e" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="13:00" textAlignment="CENTER" wrappingWidth="120.0">
+                              <font>
+                                 <Font name="System Bold" size="35.0" />
+                              </font>
+                           </Text>
+                        </children>
+                     </Pane>
+                     <Pane fx:id="ts1314" layoutX="360.0" prefHeight="120.0" prefWidth="120.0" style="-fx-background-color: #707070;">
+                        <children>
+                           <Text fill="#3e3e3e" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="13:00" textAlignment="CENTER" wrappingWidth="120.0">
+                              <font>
+                                 <Font name="System Bold" size="35.0" />
+                              </font>
+                           </Text>
+                           <Text fill="#3e3e3e" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="14:00" textAlignment="CENTER" wrappingWidth="120.0">
+                              <font>
+                                 <Font name="System Bold" size="35.0" />
+                              </font>
+                           </Text>
+                        </children>
+                     </Pane>
+                     <Pane fx:id="ts1415" layoutX="480.0" prefHeight="120.0" prefWidth="120.0" style="-fx-background-color: #707070;">
+                        <children>
+                           <Text fill="#3e3e3e" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="14:00" textAlignment="CENTER" wrappingWidth="120.0">
+                              <font>
+                                 <Font name="System Bold" size="35.0" />
+                              </font>
+                           </Text>
+                           <Text fill="#3e3e3e" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="15:00" textAlignment="CENTER" wrappingWidth="120.0">
+                              <font>
+                                 <Font name="System Bold" size="35.0" />
+                              </font>
+                           </Text>
+                        </children>
+                     </Pane>
+
+                     <Pane fx:id="ts1516" layoutX="600.0" prefHeight="120.0" prefWidth="120.0" style="-fx-background-color: #707070;">
+                        <children>
+                           <Text fill="#3e3e3e" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="15:00" textAlignment="CENTER" wrappingWidth="120.0">
+                              <font>
+                                 <Font name="System Bold" size="35.0" />
+                              </font>
+                           </Text>
+                           <Text fill="#3e3e3e" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="16:00" textAlignment="CENTER" wrappingWidth="120.0">
+                              <font>
+                                 <Font name="System Bold" size="35.0" />
+                              </font>
+                           </Text>
+                        </children>
+                     </Pane>
+
+                     <Pane fx:id="ts1617" layoutX="720.0" prefHeight="120.0" prefWidth="120.0" style="-fx-background-color: #707070;">
+                        <children>
+                           <Text fill="#3e3e3e" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="16:00" textAlignment="CENTER" wrappingWidth="120.0">
+                              <font>
+                                 <Font name="System Bold" size="35.0" />
+                              </font>
+                           </Text>
+                           <Text fill="#3e3e3e" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="17:00" textAlignment="CENTER" wrappingWidth="120.0">
+                              <font>
+                                 <Font name="System Bold" size="35.0" />
+                              </font>
+                           </Text>
+                        </children>
+                     </Pane>
+
+
+                     <Pane fx:id="ts1718" layoutX="840.0" prefHeight="120.0" prefWidth="120.0" style="-fx-background-color: #707070;">
+                        <children>
+                           <Text fill="#3e3e3e" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="17:00" textAlignment="CENTER" wrappingWidth="120.0">
+                              <font>
+                                 <Font name="System Bold" size="35.0" />
+                              </font>
+                           </Text>
+                           <Text fill="#3e3e3e" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="18:00" textAlignment="CENTER" wrappingWidth="120.0">
+                              <font>
+                                 <Font name="System Bold" size="35.0" />
+                              </font>
+                           </Text>
+                        </children>
+                     </Pane>
+
+                     <Pane fx:id="ts1819" layoutX="960.0" prefHeight="120.0" prefWidth="120.0" style="-fx-background-color: #707070;">
+                        <children>
+                           <Text fill="#3e3e3e" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="18:00" textAlignment="CENTER" wrappingWidth="120.0">
+                              <font>
+                                 <Font name="System Bold" size="35.0" />
+                              </font>
+                           </Text>
+                           <Text fill="#3e3e3e" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="19:00" textAlignment="CENTER" wrappingWidth="120.0">
+                              <font>
+                                 <Font name="System Bold" size="35.0" />
+                              </font>
+                           </Text>
+                        </children>
+                     </Pane>
+
+                     <Pane fx:id="ts1920" layoutX="1080.0" prefHeight="120.0" prefWidth="120.0" style="-fx-background-color: #707070;">
+                        <children>
+                           <Text fill="#3e3e3e" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="19:00" textAlignment="CENTER" wrappingWidth="120.0">
+                              <font>
+                                 <Font name="System Bold" size="35.0" />
+                              </font>
+                           </Text>
+                           <Text fill="#3e3e3e" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="20:00" textAlignment="CENTER" wrappingWidth="120.0">
+                              <font>
+                                 <Font name="System Bold" size="35.0" />
+                              </font>
+                           </Text>
+                        </children>
+                     </Pane>
+                  </children>
+               </Pane>
+               <Pane fx:id="calendarPane" layoutX="1019.0" layoutY="76.0" prefHeight="214.0" prefWidth="206.0" />
+               <Text layoutX="1019.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select a date">
+                  <font>
+                     <Font name="AvenirNextLTPro-Bold" size="33.0" />
+                  </font>
+               </Text>
+               <Text fx:id="message" layoutX="25.0" layoutY="256.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="967.0">
+                  <font>
+                     <Font name="AvenirNextLTPro-Bold" size="23.0" />
+                  </font>
+               </Text>
+               <Text fx:id="address" layoutX="25.0" layoutY="327.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+                  <font>
+                     <Font name="AvenirNextLTPro-Bold" size="23.0" />
+                  </font>
+               </Text>
+               <Text layoutX="491.0" layoutY="381.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select a timeslot" textAlignment="CENTER" wrappingWidth="267.7021484375">
+                  <font>
+                     <Font name="AvenirNextLTPro-Bold" size="33.0" />
+                  </font>
+               </Text>
+               <Pane fx:id="showMapButton" layoutX="21.0" layoutY="178.0" prefHeight="40.0" prefWidth="227.0" style="-fx-background-color: #1D814F; -fx-background-radius: 13;">
+                  <children>
+                     <Text fill="WHITE" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SHOW ON MAP" textAlignment="CENTER" wrappingWidth="227.0">
+                        <font>
+                           <Font name="AvenirNextLTPro-Bold" size="27.0" />
+                        </font>
+                        <cursor>
+                           <Cursor fx:constant="HAND" />
+                        </cursor>
+                     </Text>
+                  </children>
+               </Pane>
+               <Text fx:id="overrideWarning" fill="#3e3e3e" layoutX="174.0" layoutY="590.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The grayed out reservations are reserations students have made, reserving these timeslots will override the student's reservation" textAlignment="CENTER" visible="false">
+                  <font>
+                     <Font size="16.0" />
+                  </font>
+               </Text>
+            </children>
+         </Pane>
+      </VBox>
+      <Pane prefHeight="70.0" prefWidth="${vboxNode.parent.width}" style="-fx-background-color: #DEDEDE;" stylesheets="@../../../../build/resources/main/CSS/RoomReservationScreen.css">
+         <children>
+            <ImageView fx:id="logo" layoutX="1195.0" layoutY="11.0" onMouseClicked="#backAction">
+               <image>
+                  <Image url="@../../../../build/resources/main/Images/toolbar-logo-2.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <Text layoutX="538.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select a timeslot" textAlignment="CENTER">
+               <font>
+                  <Font name="AvenirNextLTPro-Bold" size="40.0" />
+               </font>
+            </Text>
+            <ImageView layoutX="13.0" layoutY="11.0" onMouseClicked="#roomReservationAction">
+               <image>
+                  <Image url="@../../../../build/resources/main/Images/back-button.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</Pane>

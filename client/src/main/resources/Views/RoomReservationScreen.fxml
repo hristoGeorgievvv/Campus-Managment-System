@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id="mainPane" minHeight="768.0" minWidth="1366.0" prefHeight="768.0" prefWidth="1366.0" style="-fx-background-color: #528DBB;" stylesheets="@../CSS/RoomReservationScreen.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nl.tudelft.oopp.demo.views.RoomReservationScreen">
+   <children>
+
+      <VBox fx:id="vboxNode" alignment="CENTER" layoutY="70.0" prefWidth="${vboxNode.parent.width}">
+         <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="610.0" prefWidth="1258.0">
+            <children>
+               <Pane fx:id="leftPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="610.0" prefWidth="624.0" style="-fx-background-color: #DEDEDE;">
+                  <effect>
+                     <DropShadow color="#00000080" height="151.47" radius="74.4925" spread="0.3" width="148.5" />
+                  </effect>
+                  <children>
+                     <Text fill="#3e3e3e" layoutX="14.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select a building">
+                        <font>
+                           <Font name="AvenirNextLTPro-Bold" size="40.0" />
+                        </font>
+                     </Text>
+                     <ScrollPane layoutX="6.0" layoutY="58.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="546.0" prefWidth="604.0">
+                        <content>
+                           <VBox fx:id="buildings" maxWidth="602.0">
+                              <children>
+
+                              </children></VBox>
+                        </content></ScrollPane>
+                  </children>
+               </Pane>
+               <Pane fx:id="rightPane" layoutX="634.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="610.0" prefWidth="624.0" style="-fx-background-color: #DEDEDE;">
+                  <effect>
+                     <DropShadow color="#00000080" height="151.47" radius="74.4925" spread="0.3" width="148.5" />
+                  </effect>
+                  <children>
+                     <Text fx:id="rightTitle" fill="#3e3e3e" layoutX="14.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="">
+
+                        <font>
+                           <Font name="AvenirNextLTPro-Bold" size="40.0" />
+                        </font>
+                     </Text>
+                     <ScrollPane layoutX="6.0" layoutY="103.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="497.0" prefWidth="611.0" style="-fx-background-color: #DEDEDE;">
+                        <content>
+                           <VBox fx:id="classrooms" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="602.0" style="-fx-background-color: #DEDEDE;" />
+                        </content>
+                     </ScrollPane>
+                     <Pane fx:id="filteringMenu" layoutX="14.0" layoutY="50.0" prefHeight="53.0" prefWidth="604.0">
+                        <children>
+                           <Text fill="#3e3e3e" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Filters:">
+                              <font>
+                                 <Font name="AvenirNextLTPro-Bold" size="22.0" />
+                              </font>
+                           </Text>
+                           <CheckBox fx:id="projectorCheckbox" layoutX="78.0" layoutY="9.0" mnemonicParsing="false" text="Projector">
+                              <font>
+                                 <Font name="AvenirNextLTPro-Bold" size="12.0" />
+                              </font>
+                           </CheckBox>
+                           <CheckBox fx:id="whiteboardCheckbox" layoutX="161.0" layoutY="9.0" mnemonicParsing="false" text="Whiteboard">
+                              <font>
+                                 <Font name="AvenirNextLTPro-Bold" size="12.0" />
+                              </font>
+                           </CheckBox>
+                           <CheckBox fx:id="blackboardCheckbox" layoutX="263.0" layoutY="9.0" mnemonicParsing="false" text="Blackboard">
+                              <font>
+                                 <Font name="AvenirNextLTPro-Bold" size="12.0" />
+                              </font>
+                           </CheckBox>
+                           <Slider fx:id="capacitySlider" layoutX="473.0" layoutY="10.0" majorTickUnit="5.0" max="50.0" minorTickCount="0" prefHeight="37.0" prefWidth="107.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" />
+                           <Label layoutX="362.0" layoutY="10.0" text="Minimum capacity">
+                              <font>
+                                 <Font name="AvenirNextLTPro-Bold" size="12.0" />
+                              </font>
+                           </Label>
+                           <Text fill="#3e3e3e" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sort by:">
+                              <font>
+                                 <Font name="AvenirNextLTPro-Bold" size="22.0" />
+                              </font>
+                           </Text>
+                           <RadioButton fx:id="capacityHtLBox" layoutX="93.0" layoutY="35.0" mnemonicParsing="false" text="Capacity (High to Low)">
+                              <font>
+                                 <Font name="AvenirNextLTPro-Bold" size="12.0" />
+                              </font>
+                           </RadioButton>
+                           <RadioButton fx:id="capacityLtHBox" layoutX="256.0" layoutY="33.0" mnemonicParsing="false" text="Capacity (Low to High)">
+                              <font>
+                                 <Font name="AvenirNextLTPro-Bold" size="12.0" />
+                              </font>
+                           </RadioButton>
+                        </children>
+                     </Pane>
+                  </children>
+               </Pane>
+            </children>
+         </Pane>
+      </VBox>
+      <Pane prefHeight="70.0" prefWidth="${vboxNode.parent.width}" style="-fx-background-color: #DEDEDE;">
+         <children>
+            <ImageView fx:id="logo" layoutX="1228.0" layoutY="8.0" onMouseClicked="#backAction">
+               <image>
+                  <Image url="@../Images/toolbar-logo-2.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <Text layoutX="532.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Reserve a room" textAlignment="CENTER">
+               <font>
+                  <Font name="AvenirNextLTPro-Bold" size="40.0" />
+               </font>
+            </Text>
+            <ImageView fx:id="backButton" layoutX="13.0" layoutY="11.0" onMouseClicked="#backAction">
+               <image>
+                  <Image url="@../Images/back-button.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children>
+      </Pane>
+
+
+   </children>
+</Pane>

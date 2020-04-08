@@ -1,0 +1,17 @@
+.text-field {
+    -fx-background-color: transparent;
+    -fx-border-color: #0598ff;
+    -fx-border-width: 0px 0px 2px 0px;
+}
+
+.password-field {
+    -fx-background-color: transparent;
+    -fx-border-color: #0598ff;
+    -fx-border-width: 0px 0px 2px 0px;
+}
+
+.button{
+    -fx-background-color: #0598ff;
+}
+
+

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane minHeight="768.0" minWidth="1336.0" styleClass="borderPaneImg" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nl.tudelft.oopp.demo.views.HomeScreen">
+      <StackPane minHeight="768.0" minWidth="1336.0" style="-fx-background-color: #518CBA;" stylesheets="@../CSS/HomeScreen.css">
+         <children>
+            <Pane maxHeight="620.0" maxWidth="670.0" minHeight="620.0" minWidth="670.0" style="-fx-background-color: #DEDEDE;" styleClass="pane" stylesheets="@../CSS/HomeScreen.css">
+               <effect>
+                  <DropShadow color="#00000080" height="151.47" radius="74.4925" spread="0.3" width="148.5" />
+               </effect>
+
+               <Button alignment="CENTER" layoutX="548.0" layoutY="14.0" maxHeight="38.0" maxWidth="108.0" minHeight="30.0" minWidth="108.0" mnemonicParsing="false" onMouseClicked="#logoutAction" prefHeight="38.0" prefWidth="108.0" styleClass="logoutButton" text="Logout" textFill="WHITE">
+                  <font>
+                     <Font name="AvenirNextLTPro-Bold" size="18.0" />
+                  </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               </Button>
+
+               <ImageView fitHeight="249.0" fitWidth="523.0" layoutX="74.0" layoutY="61.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@../Images/main-logo.png" />
+                  </image>
+               </ImageView>
+
+               <Text fx:id="userMessage" layoutY="337.0" text="Hello {username}, please select an action." textAlignment="CENTER" wrappingWidth="670.0">
+               <font>
+                  <Font name="AvenirNextLTPro-Bold" size="22.0" />
+               </font></Text>
+
+
+            <ImageView fitHeight="200.0" fitWidth="200.0" layoutX="448.0" layoutY="381.0" onMouseClicked="#foodAction">
+               <image>
+                  <Image url="@../Images/main-menu/order-food-button.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fitHeight="200.0" fitWidth="200.0" layoutX="23.0" layoutY="381.0" onMouseClicked="#bikeRentAction">
+               <image>
+                  <Image url="@../Images/main-menu/rent-bike-button.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fitHeight="200.0" fitWidth="200.0" layoutX="235.0" layoutY="381.0" onMouseClicked="#roomReservationAction">
+               <image>
+                  <Image url="@../Images/main-menu/reserve-room-button.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <Button fx:id="userTypeButton" layoutX="14.0" layoutY="21.0" mnemonicParsing="false" onMouseClicked="#adminAction" prefHeight="38.0" prefWidth="83.0" styleClass="userTypeButton" text="-User type here-" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="studentButton" layoutX="14.0" layoutY="21.0" mnemonicParsing="false" onMouseClicked="#studentAction" prefHeight="38.0" prefWidth="83.0" styleClass="userTypeButton" text="Student" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+               <Button fx:id="staffButton" layoutX="14.0" layoutY="21.0" mnemonicParsing="false" onMouseClicked="#staffAction" prefHeight="38.0" prefWidth="83.0" styleClass="userTypeButton" text="Staff" visible="false">
+                  <cursor>
+                     <Cursor fx:constant="HAND" />
+                  </cursor>
+               </Button>
+            <Button fx:id="reservationViewButton" layoutX="259.0" layoutY="581.0" mnemonicParsing="false" onMouseClicked="#getReservations" prefHeight="29.0" prefWidth="154.0" styleClass="userTypeButton" text="View reservations">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="bikesRented" layoutX="46.0" layoutY="581.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="154.0" text="# bikes rented" textAlignment="CENTER">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </Button>
+            <Button fx:id="viewOrderButton" layoutX="471.0" layoutY="581.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="154.0" styleClass="userTypeButton" onMouseClicked="#viewOrders" text="View orders" >
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+
+
+            </Pane>
+         </children>
+      </StackPane>
+</Pane>

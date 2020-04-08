@@ -1,0 +1,33 @@
+.Pane{
+    -fx-font-family: "AvenirNext LT Pro Bold";
+}
+
+#buildings{
+    -fx-background-color: #DEDEDE;
+}
+
+.building{
+    -fx-background-color: #F1EEEE;
+    -fx-background-radius: 22;
+}
+
+.building .Text{
+    -fx-font-family: "AvenirNext LT Pro Bold";
+}
+
+.room{
+    -fx-background-color: #CBC6C6;
+    -fx-background-radius: 8;
+}
+.room ImageView{
+    -fx-cursor: hand;
+}
+
+.scroll-pane > .viewport {
+    -fx-background-color: transparent;
+}
+
+.scroll-pane {
+    -fx-background-color: transparent;
+
+}

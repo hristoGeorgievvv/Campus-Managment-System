@@ -1,0 +1,77 @@
+#main{
+    -fx-alignment: center;
+    -fx-fill-height: true;
+    -fx-border-radius: 10 10 10 10;
+    -fx-background-radius: 10 10 10 10;
+    -fx-position-shape: true;
+}
+
+#vbox{
+    -fx-fill-height: true;
+    -fx-border-radius: 10 10 10 10;
+    -fx-background-radius: 10 10 10 10;
+    -fx-border-insets: 20, 20, 20, 20;
+    -fx-border-color: #010000;
+    -fx-position-shape: true;
+    -fx-padding: 20px;
+}
+
+#item1 {
+    -fx-cell-size: 100px;
+    -fx-min-height: 100px;
+    -fx-min-width: 100px;
+    -fx-background-color: #F1EEEE;
+    -fx-border-radius: 2;
+    -fx-border-width: 2;
+    -fx-font-family: "AvenirNext LT Pro Bold";
+    -fx-text-alignment: center;
+    -fx-wrap-text: true;
+    -fx-content-display: center;
+    -fx-alignment: center;
+    -fx-fill-height: true;
+}
+
+#menu{
+    -fx-alignment: center;
+    -fx-fill-height: true;
+    -fx-background-color: #F1EEEE;
+    -fx-border-width: 2px;
+}
+
+.label{
+    -fx-alignment: center-right;
+    -fx-font-family: "AvenirNext LT Pro Bold";
+    -fx-font-size: 15px;
+    -fx-min-width: 50px;
+    -fx-min-width: 20px;
+    -fx-text-fill: #ffffff;
+    -fx-background-color: #f40503;
+    -fx-background-size: 100px;
+    -fx-border-radius: 5 5 5 5;
+    -fx-background-radius: 5 5 5 5;
+}
+
+#buildingsLeave{
+    -fx-alignment: center;
+}
+
+#text{
+    -fx-font-family: "AvenirNext LT Pro Bold";
+    -fx-font-size: 20px;
+}
+
+#selectButton{
+    -fx-cell-size: 20px;
+    -fx-min-height: 20px;
+    -fx-min-width: 20px;
+    -fx-background-color: #F1EEEE;
+    -fx-border-color: #111111;
+    -fx-border-radius: 2;
+    -fx-border-width: 2;
+    -fx-font-family: "AvenirNext LT Pro Bold";
+    -fx-text-alignment: center;
+    -fx-wrap-text: true;
+    -fx-content-display: center;
+    -fx-alignment: center;
+    -fx-fill-height: true;
+}

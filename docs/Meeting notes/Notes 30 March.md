@@ -1,0 +1,9 @@
+- Finish up project and clean 
+- Popup for actions like food
+- Last week to code, make sure everything is done by code deadline
+- Draft feedback on friday, one week to itegrate
+- TA Cannot watch draft videos
+- Scorion this weekend.
+- Keep an eye on deadlines
+- Can use tag to mark when code is done
+- Aim to be done with code by friday, and do not touch after monday

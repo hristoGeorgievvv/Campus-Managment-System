@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import jfxtras.scene.control.agenda.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1378.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nl.tudelft.oopp.demo.views.StaffScreen">
+<children>
+    <Pane prefHeight="70.0" prefWidth="1366.0" style="-fx-background-color: #DEDEDE;" stylesheets="@../CSS/RoomReservationScreen.css">
+        <children>
+            <ImageView fx:id="logo" layoutX="1195.0" layoutY="11.0" onMouseClicked="#backAction">
+                <image>
+                    <Image url="@../Images/toolbar-logo-2.png" />
+                </image>
+                <cursor>
+                    <Cursor fx:constant="HAND" />
+                </cursor>
+            </ImageView>
+            <Text fx:id="header" layoutX="532.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Staff Page" textAlignment="CENTER">
+                <font>
+                    <Font name="AvenirNextLTPro-Bold" size="40.0" />
+                </font>
+            </Text>
+            <ImageView fx:id="backButton" layoutX="13.0" layoutY="11.0" onMouseClicked="#backAction">
+                <image>
+                    <Image url="@../Images/back-button.png" />
+                </image>
+                <cursor>
+                    <Cursor fx:constant="HAND" />
+                </cursor>
+            </ImageView>
+        </children>
+    </Pane>
+    <AnchorPane prefHeight="51.0" prefWidth="600.0">
+        <children>
+            <Text fx:id="building_name" layoutX="7.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User details" underline="true" wrappingWidth="274.099609375">
+                <font>
+                    <Font size="19.0" />
+                </font>
+            </Text>
+            <Text fx:id="building_name2" layoutX="712.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Reserved buildings" underline="true" wrappingWidth="274.099609375">
+                <font>
+                    <Font size="19.0" />
+                </font>
+            </Text>
+        </children>
+    </AnchorPane>
+    <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="69.0" prefWidth="600.0" style="-fx-background-color: #dedede; -fx-background-radius: 10;">
+        <children>
+            <Text layoutX="14.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User name:">
+                <font>
+                    <Font name="AvenirNextLTPro-Bold" size="25.0" />
+                </font>
+            </Text>
+            <Text fx:id="userName" layoutX="251.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*user name:*">
+                <font>
+                    <Font name="AvenirNextLTPro-Bold" size="25.0" />
+                </font>
+            </Text>
+        </children>
+         <VBox.margin>
+            <Insets left="20.0" />
+         </VBox.margin>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+    </AnchorPane>
+    <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="69.0" prefWidth="600.0" style="-fx-background-color: #dedede; -fx-background-radius: 10;">
+        <children>
+            <Text layoutX="14.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email:">
+                <font>
+                    <Font name="AvenirNextLTPro-Bold" size="26.0" />
+                </font>
+            </Text>
+            <Text fx:id="emailText" layoutX="253.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*Email:*">
+                <font>
+                    <Font name="AvenirNextLTPro-Bold" size="26.0" />
+                </font>
+            </Text>
+        </children>
+         <VBox.margin>
+            <Insets left="20.0" top="20.0" />
+         </VBox.margin>
+    </AnchorPane>
+    <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="69.0" prefWidth="600.0" style="-fx-background-color: #dedede; -fx-background-radius: 10;">
+        <children>
+            <Text layoutX="14.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID number">
+                <font>
+                    <Font name="AvenirNextLTPro-Bold" size="26.0" />
+                </font>
+            </Text>
+            <Text fx:id="idText" layoutX="253.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*ID number*">
+                <font>
+                    <Font name="AvenirNextLTPro-Bold" size="26.0" />
+                </font>
+            </Text>
+        </children>
+         <VBox.margin>
+            <Insets left="20.0" top="20.0" />
+         </VBox.margin>
+    </AnchorPane>
+    <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="69.0" prefWidth="600.0" style="-fx-background-color: #dedede; -fx-background-radius: 10;">
+        <children>
+            <Text layoutX="14.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0">
+                <font>
+                    <Font size="15.0" />
+                </font>
+            </Text>
+            <Text layoutX="14.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User type">
+                <font>
+                    <Font name="AvenirNextLTPro-Bold" size="26.0" />
+                </font>
+            </Text>
+            <Text fx:id="userType" layoutX="253.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*User type*">
+                <font>
+                    <Font name="AvenirNextLTPro-Bold" size="26.0" />
+                </font>
+            </Text>
+        </children>
+         <VBox.margin>
+            <Insets left="20.0" top="20.0" />
+         </VBox.margin>
+    </AnchorPane>
+    <AnchorPane layoutX="712.0" layoutY="32.0" prefHeight="276.0" prefWidth="1378.0">
+        <children>
+            <Agenda fx:id="currentReservations" allowDragging="false" allowResize="false" layoutX="652.0" layoutY="-321.0" prefHeight="503.0" prefWidth="706.0">
+
+            </Agenda>
+        </children>
+    </AnchorPane>
+</children>
+</VBox>

@@ -1,0 +1,59 @@
+@font-face {
+    font-family: 'AvenirNext LT Pro Bold';
+    src: url('../Avenir-Next-LT-Pro-Bold_5182.ttf');
+}
+
+.root{
+    -fx-font-family: 'AvenirNext LT Pro Bold';
+    -fx-text-fill: black;
+}
+.password-field, .text-field{
+    -fx-font-family: 'AvenirNext LT Pro Bold';
+    -fx-text-fill: black;
+    -fx-font-size: 24px;
+    -fx-focus-color: transparent;
+}
+
+.password-field:focused, .text-field:focused{
+    -fx-focus-color: transparent;
+}
+
+#login-button, #register-button{
+    -fx-font-family: 'AvenirNext LT Pro Bold';
+}
+
+#login-button{
+    -fx-font-size: 35px;
+}
+
+#register-button{
+    -fx-font-size: 18px;
+}
+
+.registerButton{
+    -fx-background-color: #1D814F;
+}
+
+.registerButton:hover{
+    -fx-background-color: #0D711F;
+}
+
+.loginButton{
+    -fx-background-color: #DEDEDE;
+    -fx-border-color:  #FFFFFF;
+    -fx-border-width: 2px;
+}
+
+.loginButton:hover{
+    -fx-background-color: #CECECE ;
+    -fx-border-color: #EEEEEE;
+}
+
+.backButton{
+    -fx-background-color: #CF0202;
+}
+
+
+.backButton:hover{
+    -fx-background-color:  #B00000;
+}
