@@ -17,7 +17,7 @@ Gradle - Dependency Management
 JDK - Java™ Platform, Standard Edition Development Kit  
 Spring Boot - Framework to ease the bootstrapping and development of new Spring Applications  
 MySQL - Open-Source Relational Database Management System  
-JavaFx - Framework to implement the UI
+JavaFx - Framework to implement the UI  
 GSON - Library to serialize and deserialize Java objects to JSON.  
 
 ## Demo
