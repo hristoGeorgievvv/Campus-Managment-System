@@ -1,23 +1,26 @@
-﻿# Starting template
-
-This README will need to contain a description of your project, how to run it, how to set up the development environment, and who worked on it.
-This information can be added throughout the course, except for the names of the group members.
-Add your own name (do not add the names for others!) to the section below.
+﻿# Campus-Mangament-System
+ A group project for one of our university courses 
 
 ## Description of project
 	WIP: Campus management software with ability to rent rooms for certain timeslots, as well as renting bikes 
-## Group members
+	
 
-![](docs/images/Untitled1.png) 
+## Architecture
+The program is split up into three main layers:  
+•Client-side/frontend  
+•Server-side/backend  
+•Database  
+ MVC design pattern is used for the front end and JavaFX framework to implement the UI. The frontend accesses the backend through http requests to rest API endpoints. The backend uses Springframework and Spring JPA ( Java Persistence API) that simplifies repository’s implementation. This makes our data access layer extremely easy to maintain. Database is created using MySql, and it is hosted online by a cloud hosting provider called DigitalOcean.
+ 
+## Built with
+Gradle - Dependency Management  
+JDK - Java™ Platform, Standard Edition Development Kit  
+Spring Boot - Framework to ease the bootstrapping and development of new Spring Applications  
+MySQL - Open-Source Relational Database Management System  
+JavaFx - Framework to implement the UI
+GSON - Library to serialize and deserialize Java objects to JSON.  
 
-<!-- Instructions (remove once assignment has been completed -->
-<!-- - Add (only!) your own name to the table above (use Markdown formatting) -->
-<!-- - Mention your *student* email address -->
-<!-- - Preferably add a recognisable photo, otherwise add your GitLab photo -->
-<!-- - (please make sure the photos have the same size) --> 
-
-## How to run it
-
-## How to contribute to it
-
-## Copyright / License (opt.)
+## Demo
+![](docs/Images/Untitled1.png) 
+![](docs/Images/Untitled2.png)
+![](docs/Images/Untitled3.png)
