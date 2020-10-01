@@ -10,7 +10,7 @@ The program is split up into three main layers:
 •Client-side/frontend  
 •Server-side/backend  
 •Database  
- MVC design pattern is used for the front end and JavaFX framework to implement the UI. The frontend accesses the backend through http requests to rest API endpoints. The backend uses Springframework and Spring JPA ( Java Persistence API) that simplifies repository’s implementation. This makes our data access layer extremely easy to maintain. Database is created using MySql, and it is hosted online by a cloud hosting provider called DigitalOcean.
+ MVC design pattern is used for the front end and JavaFX framework to implement the UI. The frontend accesses the backend through http requests to rest API endpoints. The backend uses Spring framework and Spring JPA ( Java Persistence API) that simplifies repository’s implementation. This makes our data access layer extremely easy to maintain. Database is created using MySql, and it is hosted online by a cloud hosting provider called DigitalOcean.
  
 ## Built with
 Gradle - Dependency Management  
